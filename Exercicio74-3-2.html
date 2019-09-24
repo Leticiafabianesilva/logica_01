@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // objeto
+let produtos = new Array();
+
+for (let indice = 0; indice < 5; indice++) {
+
+    produtos.Nome = window.prompt('Escreva o nome do produto');
+    produtos.Valor = parseFloat(window.prompt('Escreva o valor do produto'));
+
+    produtos[indice] = produtos;
+}
+
+let soma = 0;
+
+for (let indice = 0; indice < produtos.length; indice++) 
+{
+
+   soma += produtos[indice].Valor;
+}
+ 
+let media = soma / produtos.length;
+
+document.write(`<p>Média ${media}</p>`)
+
+let produtosAcima = new Array ();
+let produtosAbaixo = new Array ();
+
+for (let indice = 0; indice < produtos.length;indice++)
+{
+    if (produtos[indice].Valor < media)
+    produtosAbaixo[indice]= produtos[indice].Nome;
+    else 
+    produtosAcima[indice]= produtos[indice].Nome;
+}
+
+    document.write(`<p>Produtos acima da média: ${produtosAcima.join(',')}</p>`);
+    document.write(`<p>Produtos abaixo da média: ${produtosAbaixo.join(',')}</p>`);
+          
+        </script>
+    </body>
+</html>

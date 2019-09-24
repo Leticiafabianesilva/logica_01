@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        function gerarProdutoComPrecoDeVenda(produto, indiceMultiplicador) {
+            return {
+                nome: produto.nome,
+                precoCusto: produto.precoCusto,
+                precoVenda: produto.precoCusto * indiceMultiplicador
+            }
+        }
+        function
+            gerarListaProdutosComPrecoDeVenda(produtos, indiceMultiplicador) {
+            return produtos.map(produto => {
+                return gerarProdutoComPrecoDeVenda(produto, indiceMultiplicador);
+            })
+        }
+
+        function imprimirListaComPrecoVenda(produtos, indiceMultiplicador) {
+            let produtosComPrecoDeVenda = gerarListaProdutosComPrecoDeVenda(produtos, indiceMultiplicador);
+
+            document.write('<ul>'); 
+            produtosComPrecoDeVenda.forEach(produto => { 
+                document.write(`<li>            
+                 <strong>nome:</strong>${produto.nome}             
+                 <strong>custo:</strong>R$ ${produto.precoCusto.toFixed(2)}            
+                <strong>valorVenda:</strong>R$ ${produto.precoVenda.toFixed(2)}</li>`) });       
+                document.write('</ul>')
+        });
+        
+        let produtos = [
+        { nome: 'produto 01', precoCusto: 25.90 },
+        { nome: 'produto 02', precoCusto: 215.00 },
+        { nome: 'produto 03', precoCusto: 999.90 },
+        { nome: 'produto 04', precoCusto: 799.70 },
+        { nome: 'produto 05', precoCusto: 35.90 }
+        ];
+
+        imprimirListaComPrecoVenda(produtos, 2.5); 
+
+    </script>
+</body>
+
+</html

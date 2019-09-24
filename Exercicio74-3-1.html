@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // Escreva um programa que solicite o nome e o valor de 10 produtos. 
+            //Em seguida calcule a média de preço de todos os produtos e apresente duas listas. 
+           // A primeira lista deve conter todos os produtos com o valor abaixo da média, 
+           // já a segunda lista deve conter todos os produtos com valor igual ou maior que a média.
+let produtos = new Array();
+let valores = new Array();
+
+for (let indice = 0; indice < 5; indice++) {
+
+    produtos.push(window.prompt('Escreva o nome do produto'));
+    valores[indice] = parseFloat(window.prompt('Escreva o valor do produto'));
+}
+
+let soma = 0;
+
+for (let indice = 0; indice < valores.length; indice++) 
+{
+
+   soma += valores[indice];
+}
+ 
+let media = soma / valores.length;
+
+document.write(`<p>Média ${media}</p>`)
+
+let produtosAcima = new Array ();
+let produtosAbaixo = new Array ();
+
+for (let indice = 0; indice < valores.length;indice++)
+{
+    if (valores[indice]< media)
+    produtosAbaixo[indice]= produtos[indice];
+    else 
+    produtosAcima[indice]= produtos[indice];
+}
+
+    document.write(`<p>Produtos acima da média: ${produtosAcima.join(',')}</p>`);
+    document.write(`<p>Produtos abaixo da média: ${produtosAbaixo.join(',')}</p>`);
+          
+        </script>
+    </body>
+</html>

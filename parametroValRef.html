@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            function parametroPorReferencia (pObjeto)
+            {
+                pObjeto.propriedade = 100;
+
+                document.write('<p>Chamada interna da função</p>');
+                document.write(pObjeto.propriedade);
+            }
+            function parametroPorValor (pNumero)
+            {
+                pNumero = 10;
+                document.write('<p>Chamada interna da função</p>');
+                document.write(pNumero);
+            }
+            document.write('<p>Variável por referência</p>')
+
+            let objeto = {propriedade:1};
+            document.write('<p>Antes da chamada da função</p>');
+            document.write(objeto.propriedade);
+
+            parametroPorReferencia(objeto)
+
+            document.write('<p>Depois chamada função</p>');
+            document.write(objeto.propriedade);
+
+            document.write('<p>Variável por valor</p>');
+
+            let numero = 5;
+            document.write('<p>Antes chamada função</p>');
+            document.write(numero);
+
+            parametroPorValor(numero);
+
+            document.write('<p>Depois chamada função</p>');
+            document.write(numero);
+
+        </script>
+    </body>
+</html>

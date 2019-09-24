@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            function ExibeMensagem(mensagem,quantidade){
+                for(let index = 0; index < quantidade;index++){
+                document.write('<p>' + mensagemUsuario + '</p>')
+                  }
+        
+            }
+
+        let mensagemUsuario = window.prompt('Digite sua mensagem');
+        let quantidadeUsuario = parseInt(window.prompt ('Quantas vezes aparecer?'));
+
+        ExibeMensagem(mensagemUsuario,quantidadeUsuario);
+
+        </script>
+    </body>
+</html>

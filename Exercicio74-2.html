@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+        // Escreva um programa que solicite 10 notas 
+        // e em seguida apresente a menor nota digitada e a maior nota digitada. 
+
+        let notas = new Array();
+
+        for (let indice = 0; indice < 5; indice++) {
+
+            notas[indice] = parseFloat(window.prompt('Escreva a nota'));
+        }
+
+        let maiorNota = 0;
+        let menornota = 10;
+
+        for (let indice = 0; indice < notas.length; indice++) {
+            
+            if (notas[indice] > maiorNota)
+                maiorNota = notas[indice];
+
+            else (notas[indice] < menorNota)
+                menorNota = notas[indice];
+        }
+
+        document.write(`<p> Maior nota: ${maiorNota}</p>`)
+        document.write(`<p> Menor nota: ${menorNota}</p>`)
+
+    </script>
+</body>
+
+</html>

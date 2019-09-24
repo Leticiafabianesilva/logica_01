@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+        let nomes = new Array();
+
+        nomes.push('João');
+        nomes.push('Maria');
+        nomes.push('José');
+        nomes.push('Maria');
+
+        let posição = nomes.indexOf('Maria');
+
+        if (posição > 0)
+            nomes [posição]='Ana';
+
+        document.write(nomes.join(',')); // join transforma em string e separa em , - / 
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            //Escreva um script que  solicite uma 
+            //frase ao usuário e em seguida apresente a frase digitada separada em duas partes. 
+            let frase = window.prompt('Dijite uma frase');
+
+            let metadeFrase = frase.length / 2;
+
+            document.write(`<p>${frase.substring(0,metadeFrase)}</p>`); 
+            document.write(`<p>${frase.substring(metadeFrase,frase.length)}</p>`);     
+            
+        </script>
+    </body>
+</html>

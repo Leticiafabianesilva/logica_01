@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // Escreva um script que solicite quatro palavras ao usuário
+            // e em seguida apresente todas as palavras separadas por  um traço(‘ -  ’). 
+        
+            let frase = window.prompt('Dijite uma palvra');
+
+            for (let index = 0; index < 3; index++) { // pede 3 vezes uma palavra
+                let palavra = window.prompt('Dijite uma palvra');
+
+                frase=frase.concat('-').concat(palavra);
+            }
+            document.write(frase);
+
+            // ou 4 window.prompt e document.write + 1+ 2+ 3+4
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+        // Escreva um script que solicite o nome e a nota de 20 
+        // alunos e os armazene em uma lista. Em seguida escreva a nota e o nome de todos os alunos.
+
+        let alunos = new Array ();
+        let notas = new Array ();
+
+        for (let indice = 0; indice < 5; indice++) 
+        {
+            alunos.push(window.prompt('Escreva o nome do aluno'));
+            notas[indice]= parseFloat(window.prompt('Escreva a nota'));
+        }
+
+        for (let indice = 0; indice < alunos.length; indice++)
+    {
+        document.write(`Aluno:${alunos[indice]} | Nota: ${notas[indice]} </p>`);
+    }
+    </script>
+</body>
+
+</html>

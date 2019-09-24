@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // modificar codigo exercicio anterior para passar as propriedades no proprio construtor
+            // dica: atribuir nome e idade a 2 variaveis depois instancias pessoa
+            let continuar = true
+
+            while (continuar) {
+
+            let varNome = window.prompt ('Dijite seu nome');;
+            let varIdade = parseInt(window.prompt ('Dijite sua idade'));
+
+            let pessoa = {Nome: varNome, Idade: varIdade, Altura: 1.65, Endereço: Blumenau};  
+
+            document.write(`<p>Nome:${pessoa.Nome}|Idade:${pessoa.Idade}</p>`);
+
+                continuar = window.prompt (`Deseja continuar?
+                (Sim - S | Não - N?`).toLocaleUpperCase() == "S" ;
+            }
+            
+        </script>
+    </body>
+</html>

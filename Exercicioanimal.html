@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // criar novo objeto animal com propriedas tipo nome e tamanho
+            // criar uma função construtora para instanciar um animal com propriedades tipo nome e tamanho
+            // solicitar usuario informar tipo (dog ou cat) e atribuir uma var tipo
+            // solicitar usuario informar nome e atribuir uma var nome
+            // solicitar usuario informar tamanho e atribuir uma var tamanho
+            // criar nova instancia de animal atribuindo as variaveis anteriores  as suas propriedades
+            // criar nova função falar que receba como parametro um objeto do tipo animal
+            // deve ser verificada a propriedade tipo, se o tipo for gato escrever miau, se for cachorro au au
+
+
+          function Animal (tipo,nome,tamanho) { 
+              this.Tipo = tipo;
+              this.Tamanho = tamanho;
+              this.Nome = nome; 
+          } 
+
+          function Falar (animal) {
+            if (animal.Tipo == 'CACHORRO')
+            document.write('AuAu');
+          else
+            document.write('Miau')
+          }
+
+          let tipo = window.prompt ('Qual o tipo do Animal?').toUpperCase();
+
+          let nome = window.prompt ('Qual o nome do Animal?');
+
+          let tamanho = parseFloat(window.prompt ('Qual o tamanho do Animal?'));
+          
+          let animal = new Animal(tipo, nome, tamanho);
+
+          // ou let animal = new Animal(window.prompt ('Qual o tipo do Animal?').toUpperCase();
+          // window.prompt ('Qual o nome do Animal?'); parseFloat(window.prompt ('Qual o tamanho do Animal?'));
+          
+         Falar(animal);
+
+
+        </script>
+    </body>
+</html>

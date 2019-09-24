@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+
+<body>
+    <script>
+        let continuar = true;
+
+        while (continuar){
+            let numero = parseInt(window.prompt('Digite um número'));
+
+            let numeroMultiplicado = numero * 5;
+
+            document.write ('<p>'+ numeroMultiplicado + '</p>');
+
+            continuar = numero >= 0;
+        }
+    
+// ou let numero = parseInt(window.prompt('Digite um número')); while (numero > 0) {let numeroMultiplicado = numero * 5;}; numero = parseInt(window.prompt('Digite um número'));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+        let nomes = new Array();
+
+        nomes.push('João');
+        nomes.push('Maria');
+        nomes.push('José');
+        nomes.push('Ana');
+        nomes.push('Pedro');
+
+        nomes.shift(); // REMOVE ELEMENTO 1 POSIÇÃO
+        nomes.pop(); // remove ultima posicão
+        nomes.splice(1,1); //remove do elemento 1 ao 1
+
+        document.write(nomes.join(','));
+
+
+    </script>
+</body>
+
+</html>

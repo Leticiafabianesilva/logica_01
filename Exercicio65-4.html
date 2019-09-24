@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // Escreva um script que solicite uma frase para o usuário e em seguida escreva a frase invertida. 
+          
+            let frase = window.prompt('Dijite uma frase');
+            
+            let fraseInvertida = '';
+
+            for (let index = frase.length; index >=0; index--){
+                fraseInvertida = fraseInvertida.concat(frase.charAt(index));
+            }
+            document.write(fraseInvertida);
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<body>
+    <script>
+        let randomico = Math.random();
+        randomico = randomico * (50 + 1);
+        let randomicoArredondado = Math.floor(randomico);
+
+        let numeroSecreto = randomico; 
+        let numeroDigitado = window.prompt('Digite um número entre 1 e 50'); 
+       
+        numeroDigitado = parseInt(numeroDigitado);
+      // parseInt converte para número pois é string
+
+        if (numeroSecreto == numeroDigitado) // não precisa por ; no final dos blocos de condição
+        { 
+             document.write('<h1>Parabéns você acertou! O número secreto era ' + numeroSecreto + '</h1>');
+        }
+        else
+        {
+            document.write('<h1> Tente novamente! </h1>');
+        }
+
+    </script>
+</body>
+
+</html>

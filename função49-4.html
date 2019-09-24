@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+
+<body>
+    <script>
+        function MultiplicacaoPorCinco (numero){
+            let resultado = numero * 5;
+
+            document.write ('<p>'+ resultado + '</p>');
+        }
+
+    function SolicitaNumero(){
+        return parseInt (window.prompt('Digite um número'));
+    }
+           let numero = SolicitaNumero ();
+            while (numero >0){
+            MultiplicacaoPorCinco (numero);
+
+            numero = SolicitaNumero();
+        }
+
+    </script>
+</body>
+
+</html>

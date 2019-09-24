@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // criar função contrutora para objeto carro, com propriedade modelo e roda
+            // instanciar 2 objetos gol. roda 10 e polo roda 12
+
+          function Carro (modelo,roda) { // objeto tipo carro
+              this.Modelo = modelo;
+              this.Roda = roda; // this é a instancia
+          } 
+          let carro1 = new Carro('Gol', 10);  // new é função construtora
+          let carro2 = new Carro('Polo', 12); 
+
+          document.write(carro1.Modelo);
+          document.write('</br>');  //isntancia 1
+          document.write(carro1.Roda);
+          document.write('</br>'); 
+
+          document.write(carro2.Modelo);
+          document.write('</br>'); 
+          document.write(carro2.Roda); // isntancia 2
+
+        </script>
+    </body>
+</html>

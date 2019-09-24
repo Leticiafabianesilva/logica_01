@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <body>
+        <script>
+            let nota1 = window.prompt('Esvreva a primeira nota');   
+            let nota2 = window.prompt('Esvreva a segunda nota'); 
+            let nota3 = window.prompt('Esvreva a terceira nota'); 
+
+            nota1 = parseInt(nota1);
+            nota2 = parseInt(nota2);
+            nota3 = parseInt(nota3);
+
+            let media = (nota1 + nota2 + nota3) / 3;
+
+            if (media >= 9)
+            {
+                document.write('<p> Conceito A </p>');
+            }
+            if (media <9 && media >= 7)
+            {
+                document.write('<p> Conceito B </p>');
+            }
+            if (media < 7 && media >=5)
+            {
+                document.write('<p> Conceito C </p>');
+            }
+            if (media <5)
+            {
+                document.write('<p> Conceito Insuficiente </p>');
+            }
+        </script>
+    </body>
+</html>

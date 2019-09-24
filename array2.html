@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+          let nomes = new Array (); 
+
+          nomes.push('João');
+          nomes.push('Maria');
+          nomes.push('José');
+          nomes.unshift('Amanda');
+
+          nomes[10]= 'Pedro';
+
+          document.write(`Tamanho do array: ${nomes.length}`);
+
+          document.write('</br>');
+
+          document.write(`Nome na primeira posição: ${nomes[0]}`);
+
+          document.write('</br>');
+
+          document.write('Nome na última posição:'+ nomes[nomes.length - 1] );
+
+          for (let indice = 0; indice < nomes.length; indice ++)
+          {
+              if (nomes[indice]!= undefined){
+              document.write(`<p>${nomes[indice]}</p>`);
+              }
+          }
+            
+        </script>
+    </body>
+</html>

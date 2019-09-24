@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+    <body>
+        <script>
+            // criar script solicita ao usuario informar pessoas, solicitando nome e idade
+            //usar objeto tipo pessoa
+            // imprimir dados em uma linha só e usar while se o usuario deseja continuar
+           
+            let continuar = true
+
+            while (continuar) {
+            let pessoa = {};  
+
+            pessoa.Nome = window.prompt ('Dijite seu nome');;
+            pessoa.Idade = parseInt(window.prompt ('Dijite sua idade'));
+
+            document.write(`<p>Nome:${pessoa.Nome}|Idade:${pessoa.Idade}</p>`);
+
+                continuar = window.prompt (`Deseja continuar?
+                (Sim - S | Não - N?`).toLocaleUpperCase() == "S" ;
+            }
+            
+        </script>
+    </body>
+</html>
